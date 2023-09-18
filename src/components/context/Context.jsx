@@ -5,9 +5,7 @@ export const UserContext = createContext(null);
 const Context = ({ children }) => {
 
     const [number, setNumber] = useState([]);
-    const [userData, setUserData] = useState({
-
-    });
+    const [userData, setUserData] = useState({});
 
     //console.log(number);
 
