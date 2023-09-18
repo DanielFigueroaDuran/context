@@ -1,8 +1,14 @@
-import React from 'react'
+import { React, createContext, useState } from 'react'
 
-const Context = () => {
+export const UserContext = createContext(null);
+
+const Context = ({ children }) => {
+
+
     return (
-        <div>Context</div>
+        <UserContext.Provider >
+            {children}
+        </UserContext.Provider>
     )
 }
 
